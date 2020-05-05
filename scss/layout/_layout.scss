@@ -1,0 +1,27 @@
+$color-texte: #FCCA47;
+$color-fond: #579C87;
+
+.btn_accueil
+{
+        display: flex;
+        height: 10rem;
+        background-color: $color-fond;
+        justify-content: center;
+        margin-bottom: 7rem;
+    .accueil
+    {
+            align-items:center;
+            color: $color-texte;
+    }
+
+}
+
+footer
+{
+    background-color: $color-fond;
+}
+.liste_footer
+{
+    color: $color-texte;
+
+}
