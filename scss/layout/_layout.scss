@@ -1,20 +1,19 @@
-$color-texte: #FCCA47;
-$color-fond: #579C87;
+.main-header {
+    display: flex;
+    height: 5rem;
+    background-color: $color-fond;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: solid 0.1em #9acc84;
 
-.main-header
-{
-        display: flex;
-        height: 5rem;
-        background-color: $color-fond;
-        justify-content: center;
-        margin-bottom: 2rem;
-        border-bottom: solid 0.1em #9acc84;
-    .main-header-logo
-    {
-            align-items:center;
-            a{  color: $color-texte;
-                text-decoration: none;
-            }
+    .main-header-logo {
+        align-items:center;
+
+        a {  
+            color: $color-texte;
+            text-decoration: none;
+        }
+
     }
 
 }
@@ -22,9 +21,15 @@ $color-fond: #579C87;
 footer
 {
     background-color: $color-fond;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
 }
 .footer-liste
 {
     color: $color-texte;
-
+    flex-direction: row;
+    list-style: none;
 }
