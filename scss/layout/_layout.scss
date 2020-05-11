@@ -1,17 +1,20 @@
 $color-texte: #FCCA47;
 $color-fond: #579C87;
 
-.btn_accueil
+.main-header
 {
         display: flex;
-        height: 10rem;
+        height: 5rem;
         background-color: $color-fond;
         justify-content: center;
-        margin-bottom: 7rem;
-    .accueil
+        margin-bottom: 2rem;
+        border-bottom: solid 0.1em #9acc84;
+    .main-header-logo
     {
             align-items:center;
-            color: $color-texte;
+            a{  color: $color-texte;
+                text-decoration: none;
+            }
     }
 
 }
@@ -20,7 +23,7 @@ footer
 {
     background-color: $color-fond;
 }
-.liste_footer
+.footer-liste
 {
     color: $color-texte;
 
