@@ -6,66 +6,73 @@
   grid-template-rows: 600px 600px;
   grid-gap: 5em;
 }
-.menus-index .article-1 {
-  background-color: #FCDFDB;
-  grid-column: 1;
-  grid-row: 1;
+.menus-index__item {
+  border: black 2px;
+  box-shadow: black 2px 2px 2px 2px;
 }
-.menus-index .article-1 .menu1-titre {
+.menus-index__item--menu1 {
+  background-color: #FCDFDB;
+}
+.menus-index__item--menu2 {
+  background-color: #FFF5FE;
+}
+.menus-index__titre--menu1 {
   margin-top: 0;
   font-family: "Niconne", cursive;
   color: #3E141A;
 }
-.menus-index .article-1 .menu1-soustitre {
+.menus-index__soustitre--menu1 {
   text-transform: uppercase;
   font-family: "Tillana", cursive;
   color: #3E141A;
 }
-.menus-index .article-2 {
-  background-color: #FFF5FE;
-  grid-column: 2;
-  grid-row: 1;
-}
-.menus-index .article-2 .menu2-titre {
+.menus-index__titre--menu2 {
   font-family: "Croissant One", cursive;
   font-weight: lighter;
   color: #FDFFFD;
 }
-.menus-index .article-2 .menu2-soustitre {
+.menus-index__soustitre--menu2 {
   font-family: "Merriweather", serif;
   color: #D8852E;
 }
-.menus-index .article-3 {
+.menus-index__item--menu3 {
   background-color: #F9F9F9;
-  grid-column: 1;
-  grid-row: 2;
+  border: black 2px;
+  box-shadow: black 2px 2px 2px 2px;
 }
-.menus-index .article-3 .menu2-titre {
+.menus-index__titre--menu3 {
   font-family: "Niconne", cursive;
   font-weight: lighter;
   color: #FDFFFD;
 }
-.menus-index .article-3 .menu2-soustitre {
+.menus-index__soustitre--menu3 {
   font-family: "Bad Script", cursive;
   color: #399DFA;
 }
-.menus-index .article-4 {
+.menus-index__item--menu4 {
   background-color: #FDFFFD;
-  grid-column: 2;
-  grid-row: 2;
+  border: black 2px;
+  box-shadow: black 2px 2px 2px 2px;
 }
-.menus-index .article-4 .menu2-titre {
+.menus-index__titre--menu4 {
   font-family: "Kaushan Script", cursive;
   font-weight: lighter;
   color: #FDFFFD;
 }
-.menus-index .article-4 .menu2-soustitre {
+.menus-index__soustitre--menu4 {
   font-family: "Bad Script", cursive;
   color: #F2BF56;
 }
 
 .prochainement {
-  position: fixed;
+  color: #FCCA47;
+  margin: 5em;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+.main-footer__links {
+  list-style-type: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -410,8 +417,9 @@ template {
 body {
   font-family: "Montserrat", sans-serif;
 }
-body a {
-  text-decoration: none;
+
+a:visited {
+  color: #FCCA47;
 }
 
 .main-header {
@@ -422,12 +430,15 @@ body a {
   margin-bottom: 2rem;
   border-bottom: solid 0.1em #9acc84;
 }
-.main-header .main-header-logo {
+.main-header__logo {
   align-items: center;
 }
-.main-header .main-header-logo a {
+.main-header__logo a {
   color: #FCCA47;
   text-decoration: none;
+}
+.main-header__logo a:visited {
+  color: red;
 }
 
 footer {

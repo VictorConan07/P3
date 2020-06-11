@@ -6,12 +6,15 @@
     margin-bottom: 2rem;
     border-bottom: solid 0.1em #9acc84;
 
-    .main-header-logo {
+    &__logo {
         align-items:center;
 
-        a {  
+        a {            
             color: $color-texte;
             text-decoration: none;
+            &:visited{
+                color: red;
+                } 
         }
 
     }

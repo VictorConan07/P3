@@ -7,68 +7,85 @@
     grid-template-rows: 600px 600px;
     grid-gap: 5em;
     
-        .article-1 {
-        background-color: #FCDFDB;
-        grid-column: 1;
-        grid-row: 1;
-            .menu1-titre{
-                margin-top: 0;
-                font-family: 'Niconne',cursive;
-                color: #3E141A;
-            }
-            .menu1-soustitre{
-                text-transform: uppercase;
-                font-family: 'Tillana',cursive;
-                color: #3E141A;
-            }
+    &__item{
+        border: black 2px;
+        box-shadow: black 2px 2px 2px 2px;
+        
+        &--menu1 {
+            background-color: #FCDFDB;
+            // grid-column: 1;
+            // grid-row: 1;
+        }
+        &--menu2 {
+            background-color: #FFF5FE;
+            // grid-column: 2;
+            // grid-row: 1;
+        }
+        &--menu3 {
+            background-color: #F9F9F9;
+            // grid-column: 1;
+            // grid-row: 2;
+        }
+        &--menu4 {
+            background-color: #FDFFFD;
+            // grid-column: 2;
+            // grid-row: 2;
+        }          
     }
-
-        .article-2 {
-        background-color: #FFF5FE;
-        grid-column: 2;
-        grid-row: 1;
-            .menu2-titre{
-                font-family: 'Croissant One',cursive;
-                font-weight: lighter;
-                color: #FDFFFD;
-            }
-            .menu2-soustitre{
-                font-family: 'Merriweather',serif;
-                color: #D8852E;
-            }
+    &__titre {
+        &--menu1 {
+            margin-top: 0;
+            font-family: 'Niconne',cursive;
+            color: #3E141A;
+        }
+        &--menu2 {
+            font-family: 'Croissant One',cursive;
+            font-weight: lighter;
+            color: #FDFFFD;
+        }
+        &--menu3 {
+            font-family: 'Niconne',cursive;
+            font-weight: lighter;
+            color: #FDFFFD;
+        }
+        &--menu4 {
+            font-family: 'Kaushan Script',cursive;
+            font-weight: lighter;
+            color: #FDFFFD;
+        }
+        
     }
-
-        .article-3 {
-        background-color: #F9F9F9;
-        grid-column: 1;
-        grid-row: 2;
-            .menu2-titre{
-                font-family: 'Niconne',cursive;
-                font-weight: lighter;
-                color: #FDFFFD;
-            }
-            .menu2-soustitre{
-                font-family: 'Bad Script',cursive;
-                color: #399DFA;
-            }
-    }
-        .article-4 {
-        background-color: #FDFFFD;
-        grid-column: 2;
-        grid-row: 2;
-            .menu2-titre{
-                font-family: 'Kaushan Script',cursive;
-                font-weight: lighter;
-                color: #FDFFFD;
-            }
-            .menu2-soustitre{
-                font-family: 'Bad Script',cursive;
-                color: #F2BF56;
-            }
     
+    &__soustitre {
+        &--menu1 {
+            text-transform: uppercase;
+            font-family: 'Tillana',cursive;
+            color: #3E141A;
+        }
+        &--menu2 {
+            font-family: 'Merriweather',serif;
+            color: #D8852E;
+        }
+        &--menu3 {
+            font-family: 'Bad Script',cursive;
+            color: #399DFA;
+        }
+        &--menu4{
+            font-family: 'Bad Script',cursive;
+            color: #F2BF56;
+        }
+        
     }
+    
+    
 }
-.prochainement
-{
-    position: fixed;
+.prochainement {
+    color: $color-texte;
+    margin: 5em;
+    margin-bottom: 10em;
+    text-align: center;
+}
+.main-footer__links {
+    list-style-type: none
+    
 }
