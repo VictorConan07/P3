@@ -12,27 +12,8 @@
         a {            
             color: $color-texte;
             text-decoration: none;
-            &:visited{
-                color: red;
-                } 
         }
 
     }
 
-}
-
-footer
-{
-    background-color: $color-fond;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-}
-.footer-liste
-{
-    color: $color-texte;
-    flex-direction: row;
-    list-style: none;
 }

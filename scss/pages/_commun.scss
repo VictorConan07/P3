@@ -1,0 +1,14 @@
+main{
+    a
+    {
+    text-decoration: none;
+    color: blue;
+    &:visited{
+        color: green;
+        }
+    }
+    .menu__titre-principal
+    {
+        text-align: center;
+    }
+}

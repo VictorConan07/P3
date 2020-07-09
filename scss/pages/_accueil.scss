@@ -3,16 +3,36 @@
     display: grid;
     justify-content: center;
     margin: 0 8em;
+    margin-left: 0em;
+    margin-right: 0em;
     grid-template-columns: 450px 450px;
-    grid-template-rows: 600px 600px;
+    grid-template-rows: 500px 500px;
     grid-gap: 5em;
     
+    a{
+        color: red;
+    }
+
     &__item{
         border: black 2px;
         box-shadow: black 2px 2px 2px 2px;
-        
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            .fa-itunes-note 
+            {
+                font-size: 50px;
+                background: -webkit-linear-gradient(left,#f51049,#ee6237);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
         &--menu1 {
             background-color: #FCDFDB;
+            border-radius: 5px;
             // grid-column: 1;
             // grid-row: 1;
         }
@@ -33,6 +53,7 @@
         }          
     }
     &__titre {
+        font-size: 32px;
         &--menu1 {
             margin-top: 0;
             font-family: 'Niconne',cursive;
@@ -41,22 +62,29 @@
         &--menu2 {
             font-family: 'Croissant One',cursive;
             font-weight: lighter;
-            color: #FDFFFD;
+            background: -webkit-linear-gradient(300deg,#D8852E, #915DFC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &--menu3 {
             font-family: 'Niconne',cursive;
             font-weight: lighter;
-            color: #FDFFFD;
+            background: -webkit-linear-gradient(left,#0936E0,#1D91FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &--menu4 {
             font-family: 'Kaushan Script',cursive;
             font-weight: lighter;
-            color: #FDFFFD;
+            background: -webkit-linear-gradient(#3D9339,#BFFF7E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
     }
     
     &__soustitre {
+        font-size: 40px;
         &--menu1 {
             text-transform: uppercase;
             font-family: 'Tillana',cursive;
@@ -68,22 +96,39 @@
         }
         &--menu3 {
             font-family: 'Bad Script',cursive;
-            color: #399DFA;
+            background: -webkit-linear-gradient(left,#0936E0,#1D91FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &--menu4{
             font-family: 'Bad Script',cursive;
-            color: #F2BF56;
+            background: -webkit-linear-gradient(#3D9339,#BFFF7E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
     }
     
     
 }
-.prochainement {
-    color: $color-texte;
-    margin: 5em;
-    margin-bottom: 10em;
+.prochainement 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30em;
+    height: 3em;
+    margin: 7em auto;
+    border-radius: 15px;
     text-align: center;
+    color: $color-texte;
+    background-color: #579C87;
+    p
+    {   margin: 0;
+        font-size:25px;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+    }
 }
 .main-footer__links {
     list-style-type: none

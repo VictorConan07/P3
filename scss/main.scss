@@ -1,15 +1,16 @@
-@import "themes/_themes.scss";
-@import "pages/_accueil.scss";
 @import "vendors/_normalize.scss";
+@import "themes/_themes.scss";
 @import "base/_base.scss";
+@import "composants/_composants";
+@import "config/_config.scss";
+@import "pages/_commun.scss";
+@import "pages/_accueil.scss";
 @import "pages/_page1.scss";
 @import "pages/_page2.scss";
 @import "pages/_page2.scss";
 @import "pages/_page4.scss";
 @import "pages/_mentions.scss";
-@import "pages/_commun.scss";
-@import "layout/_layout.scss";
-@import "config/_config.scss";
-@import "composants/_composant.sscss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
 
  
