@@ -5,7 +5,7 @@
     margin: 0 8em;
     margin-left: 0em;
     margin-right: 0em;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px 500px;
     grid-gap: 5em;
     
@@ -25,7 +25,7 @@
             .fa-itunes-note 
             {
                 font-size: 50px;
-                background: -webkit-linear-gradient(left,#f51049,#ee6237);
+                background: -webkit-linear-gradient(left,#fd0202,#dfbdaa);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
