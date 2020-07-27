@@ -115,11 +115,10 @@
     
     
 }
-.prochainement 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.prochainement {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     width: 30em;
     height: 3em;
     margin: 7em auto;
@@ -127,11 +126,16 @@
     text-align: center;
     color: $color-texte;
     background-color: #579C87;
-    p
-    {   margin: 0;
+
+    button {   
+        margin: 0;
+        margin-top: 10px;
         font-size:25px;
         font-weight: lighter;
         letter-spacing: 0.1em;
+        background: transparent;
+        border: 0px;
+        color: $color-texte;
         &::after {
             content: "\2026";
             position: absolute;
