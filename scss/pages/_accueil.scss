@@ -22,6 +22,10 @@
             justify-content: center;
             text-align: center;
             height: 100%;
+            &:hover {
+                animation: zoom 1s linear forwards;
+                -webkit-animation: zoom 1s linear forwards;
+            }
             .fa-itunes-note 
             {
                 font-size: 50px;
@@ -53,7 +57,7 @@
         }          
     }
     &__titre {
-        font-size: 32px;
+        font-size: 26px;
         &--menu1 {
             margin-top: 0;
             font-family: 'Niconne',cursive;
@@ -84,7 +88,7 @@
     }
     
     &__soustitre {
-        font-size: 40px;
+        font-size: 36px;
         &--menu1 {
             text-transform: uppercase;
             font-family: 'Tillana',cursive;
@@ -128,9 +132,61 @@
         font-size:25px;
         font-weight: lighter;
         letter-spacing: 0.1em;
+        &::after {
+            content: "\2026";
+            position: absolute;
+            padding-left: 10px;
+            overflow: hidden;
+            animation: ellipsis steps(4) 1.3s infinite;
+            }
     }
 }
 .main-footer__links {
     list-style-type: none
     
+    }
+
+
+@keyframes zoom {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes ellipsis {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 0.9em;
+    }
 }
