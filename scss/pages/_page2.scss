@@ -1,13 +1,38 @@
 .menu__article--2
 {
+    .menu__header--2{
     background: -webkit-linear-gradient(300deg,#E38913, #8F5BFE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #FFF5FE;
+    }
 }
 .menu__titre--2
 {
     background: -webkit-linear-gradient(300deg,#E38913, #8F5BFE);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+.section__titre--entree2
+{
+    color: #C67412;
+}
+
+.section__titre--plat2
+{
+    color: #A56799;
+}
+
+.section__titre--dessert2
+{
+    color: #6E4CCC;
+}
+.liste--orange {
+    color: #C67412;
+}
+.liste--violette {
+    color: #A56799;
+}
+.liste--bleue {
+    color: #6E4CCC;
 }

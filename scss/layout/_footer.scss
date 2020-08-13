@@ -20,6 +20,8 @@
         display: flex;
         justify-content: space-between;
         align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 }
@@ -28,4 +30,9 @@
     color: $color-texte;
     flex-direction: row;
     list-style: none;
+    
+}
+.menu__footer
+{
+    margin-top: 80px;
 }
