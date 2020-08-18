@@ -371,16 +371,16 @@ main .section__titre {
   font-size: 150%;
   position: relative;
 }
-main .section__titre:hover {
-  left: 180px;
-  width: 280px;
-  background-color: #FCDFDB;
-}
 main .section__titre:hover::before {
+  left: 250px;
+  width: 280px;
+  background-color: #000;
+}
+main .section__titre::before {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 180px;
+  left: 250px;
   width: 0;
   height: 0.1em;
   background-color: rgba(255, 255, 255, 0.1);
