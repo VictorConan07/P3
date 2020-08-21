@@ -1,23 +1,38 @@
-.menu__article--1
-{
-    color: #3E141A;
-    background-color: #FCDFDB;
-    font-family: 'Kalam',cursive;
-    font-weight: lighter;
-}
-.menu__titre--1
-{
-    color: #3E141A;
-    font-family: 'Niconne',cursive;
-    font-size: 50px;
-}
-
-.menu__header--1 {
-    padding-top: 40px;
-    .fa-itunes-note {
-        font-size: 55px;
-        background: -webkit-linear-gradient(left,#f54d0b,#dfbdaa);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .menu__article--1
+    {
+        color: #3E141A;
+        background-color: #FCDFDB;
+        font-family: 'Kalam',cursive;
+        font-weight: lighter;
     }
-}
+    .menu__titre--1
+    {
+        color: #3E141A;
+        font-family: 'Niconne',cursive;
+        font-size: 50px;
+    }
+
+    .menu__header--1 {
+        padding-top: 40px;
+        .fa-itunes-note {
+            font-size: 55px;
+            background: -webkit-linear-gradient(left,#f54d0b,#dfbdaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .menu__footer--1 {
+        .fa-itunes-note {
+            font-size: 55px;
+            background: -webkit-linear-gradient(left,#f54d0b,#dfbdaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .barre_gauche--1 {
+        background-color: #3E141A;
+    }
+    .barre_droite--1 {
+        background-color: #3E141A;
+    }

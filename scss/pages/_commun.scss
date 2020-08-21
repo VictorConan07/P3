@@ -32,7 +32,7 @@ main
         &:hover::before {
             left: 250px;
             width: 280px;
-            background-color: #000;
+            background-color: #3b3b3b91;
         }
         &::before {
             content: "";
@@ -41,28 +41,10 @@ main
             left: 250px;
             width: 0;
             height: 0.1em;
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.041);
             transition: 1s ease-in-out;
         }
     }
-    .barre {
-        display: block;
-        background-color: rgba(15, 15, 15, 0.657);
-        height: 6px;
-        width: 200px;
-        position: absolute;
-    }
-        .barre_gauche {
-            left: 0;
-            top: 10px;
-        }
-        .barre_droite {
-            right: 0;
-            top: 10px;
-        }
-    
-    
-    
     ul {
         list-style-type: none;
         padding: 0;
@@ -79,6 +61,21 @@ main
     }
     
 }
+.barre {
+    display: block;
+    background-color: rgba(15, 15, 15, 0.657);
+    height: 6px;
+    width: 200px;
+    position: absolute;
+}
+    .barre_gauche {
+        left: 0;
+        top: 10px;
+    }
+    .barre_droite {
+        right: 0;
+        top: 10px;
+    }
 .wrapper {
     margin: 0 auto;
     max-width:900px;
