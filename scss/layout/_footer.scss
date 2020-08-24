@@ -12,7 +12,7 @@
     font-size: 20px;
     a
     {   color: $color-texte;
-        text-decoration: none
+        text-decoration: none;
     }
     &__links
     {
@@ -22,6 +22,9 @@
         align-content: center;
         padding-left: 20px;
         padding-right: 20px;
+        li:hover {
+            animation: shake 0.5s infinite;
+        }
     }
 
 }
@@ -35,4 +38,50 @@
 .menu__footer
 {
     margin-top: 80px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-2px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-2px, 2px) rotate(1deg);
+    }
+
+    40% {
+        transform: translate(2px, -2px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-2px, -2px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(2px, 2px) rotate(1deg);
+    }
+
+    80% {
+        transform: translate(-2px, 2px) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(2px, -2px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0px,0px) rotate(0deg);
+    }
 }
