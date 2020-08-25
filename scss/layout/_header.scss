@@ -1,0 +1,19 @@
+.main-header {
+    display: flex;
+    height: 5rem;
+    background-color: $color-fond;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: solid 0.1em #9acc84;
+
+    &__logo {
+        align-items:center;
+
+        a {            
+            color: $color-texte;
+            text-decoration: none;
+        }
+
+    }
+
+}

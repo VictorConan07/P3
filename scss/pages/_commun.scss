@@ -1,0 +1,109 @@
+main
+{
+    a
+    {
+    text-decoration: none;
+    color: blue;
+    &:visited {
+        color: green;
+        }
+    }
+    .section
+    {
+        font-size: 90%;
+    }
+    .menu__titre-principal
+    {
+        text-align: center;
+    }
+    .menu__article {
+        // margin-right: 10%;
+        // margin-left: 10%;
+        padding: 60px;
+        margin-bottom: 150px;
+        text-align: center;
+        box-shadow: 0 0 1em #e2e2e2, 0 0 1em #e2e2e2;
+    }
+    .section__titre {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 150%;
+        position: relative;
+        &:hover::before {
+            left: 250px;
+            width: 280px;
+            background-color: #3b3b3b91;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 250px;
+            width: 0;
+            height: 0.1em;
+            background-color: rgba(255, 255, 255, 0.041);
+            transition: 1s ease-in-out;
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;  
+        span {
+            font-weight: bold;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+    }
+    
+}
+.barre {
+    display: block;
+    background-color: rgba(15, 15, 15, 0.657);
+    height: 6px;
+    width: 200px;
+    position: absolute;
+}
+    .barre_gauche {
+        left: 0;
+        top: 10px;
+    }
+    .barre_droite {
+        right: 0;
+        top: 10px;
+    }
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    &--menu {
+        max-width: 900px;
+        margin-bottom: 70px;
+    }
+}
+.wrapper--layout {
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+@media screen and (min-width: 150px) and (max-width:1250px){
+    main {
+        
+        .barre 
+        {
+            display: none;
+        }
+
+        .liste-plats
+        {
+            span
+            {
+                margin-left: 5%;
+            }
+        }
+
+    }
+}
